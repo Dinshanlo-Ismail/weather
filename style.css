@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1614387880_6-p-svetlii-fon-na-avu-8.jpg");/center/cover/no-repeat;
+}
+
+.form__input.error::placeholder {
+    color: red;
+    font-weight: 700;
+}
+
+#form {
+    max-width: 555px;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    background: linear-gradient(180deg, #30A2C5 0%, rgba(255, 255, 255, 0) 100%), #00242F;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.form__search {
+    display: flex;
+    justify-content: space-around;
+    padding: 31px 0 25px 0;
+}
+
+.form__input {
+    caret-color: transparent;
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    border: 0;
+    color: #30A2C5;
+    font-size: 15px;
+}
+
+.form__input::placeholder {
+    color: #30A2C5;
+}
+
+.form__btn {
+    cursor: pointer;
+    font-weight: 500;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    border: 3px solid #30A2C5;
+    color: #30A2C5;
+    transition: 0.7s all;
+}
+
+.form__btn:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+}
+
+.info-weather {
+    display: none;
+}
+
+.info-weather.open-info {
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+    padding-top: 20px;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+}
+
+.region {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.info-circle.open-info {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    background: #d2dada;
+    box-shadow: 0 28px 36px rgba(96, 209, 234, 0.4);
+    border-radius: 50%;
+    margin: 0 auto;
+    color: #000;
+    text-align: center;
+}
+
+.info-weather__left, .info-weather__right {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-weather__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+    padding-bottom: 10px;
+}
+
+.info-weather span {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.temp {
+    font-weight: 300;
+    font-size: 88px;
+    line-height: 122px;
+    padding-top: 74px;
+}
+
+.image {
+    height: 120px;
+    position: absolute;
+    right: 59px;
+}
